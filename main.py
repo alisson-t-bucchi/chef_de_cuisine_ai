@@ -4,11 +4,10 @@ import cohere
 import streamlit as st
 
 from fractions import Fraction
-from config import API_KEY
-
+from config import API_KEY_COHERE
 
 try:
-    co = cohere.Client(API_KEY)
+    co = cohere.Client(API_KEY_COHERE)
 except Exception as e:
     st.error(f"Failed to initialize Cohere client: {e}")
     st.stop()

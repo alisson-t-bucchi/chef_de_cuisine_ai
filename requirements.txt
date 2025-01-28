@@ -1,3 +1,4 @@
-cohere
-streamlit
+cohere~=5.13.11
+streamlit==1.25.0
 six
+protobuf~=3.20.3

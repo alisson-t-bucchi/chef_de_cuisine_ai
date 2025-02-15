@@ -12,6 +12,8 @@ This project uses Streamlit and Cohere AI to help you create unique recipes base
   - Dessert 
   - Drink or Cocktail
 
+- Language selection:
+
 - Measurement System: Convert recipe units to:
   - Imperial system 
   - Metric system

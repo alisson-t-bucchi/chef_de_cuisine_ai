@@ -13,14 +13,15 @@ except Exception as e:
     st.stop()
 
 st.set_page_config(page_title="AI Chef de Cuisine", layout="centered", initial_sidebar_state="auto")
-st.title("🧑🏻‍🍳 AI Chef de Cuisine! 🤖")
-st.subheader("Let me help you create a new recipe!")
+st.title("🧑🏻‍🍳 International AI Chef de Cuisine!")
+st.subheader("Choose one nationality... 🌍")
+st.subheader("Let me help you create a new recipe! 🤖")
 st.divider()
 
-ingredients = st.text_input("📃 Enter a list of ingredients (comma-separated): ").strip()
-selected_dish = st.radio("🍽️ Choose a plate: ", options=["Entrée", "Main course", "Dessert", "Drink or Cocktail"])
-language_chosen = st.radio("🌍 Choose a language: ", options=["English", "French", "Portugues", "Spanish"])
-measurement_system = st.radio("📏 If your recipe is in English, choose a metric measurement: ", options=["Imperial", "Metric"])
+selected_dish = st.radio("🍽️ 1. Choose a plate: ", options=["Entrée", "Main course", "Dessert", "Drink or Cocktail"])
+ingredients = st.text_input("📃 2. Enter a list of ingredients (comma-separated): ").strip()
+language_chosen = st.radio("🌍 3. Choose a chef nationality: ", options=["English 🗽", "French 🗼", "Portuguese 🏖️", "Spanish 🪭"])
+measurement_system = st.radio("📏 4. If your recipe is in English, choose a metric measurement: ", options=["Imperial", "Metric"])
 
 if ingredients:
     if not re.match(r"^[a-zA-Z0-9,\- ]+$", ingredients):
@@ -39,7 +40,7 @@ if ingredients:
             model="command-r-08-2024",
             prompt=prompt,
             max_tokens=500,
-            temperature=1.0
+            temperature=0.0
         )
 
         generated_text = response.generations[0].text.strip()

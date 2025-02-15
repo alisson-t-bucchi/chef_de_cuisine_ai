@@ -1,24 +1,28 @@
-# 🧑‍🍳 AI Chef de Cuisine! 🤖
+# 🧑‍🍳 International AI Chef de Cuisine! 🤖
 
 This project uses Streamlit and Cohere AI to help you create unique recipes based on the available ingredients. Simply enter the ingredients and select the type of dish you want to prepare, and the system will generate a personalized recipe for you.
 
-## 📋 Features
+## 📋 Features, in a sequency of events:
 
-- Ingredient Input: Enter a list of available ingredients. 
-
-- Dish Type Selection: Choose from options such as:
+1. Dish Type Selection: Choose from options such as:
   - Entrée 
   - Main course 
   - Dessert 
   - Drink or Cocktail
 
-- Language selection:
+2. Ingredient Input: Enter a list of available ingredients.
 
-- Measurement System: Convert recipe units to:
+3. Select a chef nationality:
+  - English
+  - French
+  - Portuguese
+  - Spanish 
+
+4. Measurement System: Convert recipe units to:
   - Imperial system 
   - Metric system
 
-- Recipe Generation: Get a detailed recipe with instructions based on your ingredients and preferences.
+5. Recipe Generation: Get a detailed recipe with instructions based on your ingredients and preferences.
 
 ## 🚀 Technologies Used
 
@@ -101,7 +105,7 @@ Unit Conversion
 
 ## 💡 Credits
 
-- Developed by: [Your Name/Team]
+- Developed by: Alisson T. Bucchi 
 
 - AI API: Cohere AI
 
